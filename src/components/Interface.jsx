@@ -122,7 +122,7 @@ const skills = [
   {
     category: "Mobile Development",
     tech: "Flutter",
-    icon: "../src/assets/flutter1.png",
+    icon: "public/assets/flutter1.png",
     description: "Cross-platform app development",
     color: "bg-blue-800/40",
     hoverColor: "group-hover:bg-blue-800/50",
@@ -131,7 +131,7 @@ const skills = [
   {
     category: "Game Development",
     tech: "Godot",
-    icon: "../src/assets/godot.png",
+    icon: "public/assets/godot.png",
     description: "2D/3D game creation",
     color: "bg-purple-800/40",
     hoverColor: "group-hover:bg-purple-700/50",
@@ -140,7 +140,7 @@ const skills = [
   {
     category: "Frontend Development",
     tech: "React.js",
-    icon: "../src/assets/react.svg",
+    icon: "public/assets/react.svg",
     description: "Web application development",
     color: "bg-cyan-800/40",
     hoverColor: "group-hover:bg-cyan-700/50",
@@ -149,7 +149,7 @@ const skills = [
   {
     category: "Styling",
     tech: "JAVA",
-    icon: "../src/assets/javalogo.png",
+    icon: "public/assets/javalogo.png",
     description: "Modern CSS framework",
     color: "bg-teal-800/40",
     hoverColor: "group-hover:bg-teal-700/50",
@@ -158,7 +158,7 @@ const skills = [
   {
     category: "Machine Learning",
     tech: "Python",
-    icon: "../src/assets/python1.png",
+    icon: "public/assets/python1.png",
     description: "Backend & automation",
     color: "bg-yellow-800/40",
     hoverColor: "group-hover:bg-yellow-700/50",
@@ -167,7 +167,7 @@ const skills = [
   {
     category: "Styling",
     tech: "Tailwind",
-    icon: "../src/assets/tailwind.png",
+    icon: "public/assets/tailwind.png",
     description: "Modern CSS framework",
     color: "bg-emerald-800/40",
     hoverColor: "group-hover:bg-emerald-700/50",
@@ -176,7 +176,7 @@ const skills = [
   {
     category: "Styling",
     tech: "Node.js",
-    icon: "../src/assets/nodejslogo.png",
+    icon: "public/assets/nodejslogo.png",
     description: "Modern CSS framework",
     color: "bg-green-800/40",
     hoverColor: "group-hover:bg-green-700/50",
@@ -185,7 +185,7 @@ const skills = [
   {
     category: "Styling",
     tech: "HTML",
-    icon: "../src/assets/htmllogo.png",
+    icon: "public/assets/htmllogo.png",
     description: "Modern CSS framework",
     color: "bg-orange-800/40",
     hoverColor: "group-hover:bg-orange-700/50",
@@ -195,7 +195,7 @@ const skills = [
   {
     category: "Styling",
     tech: "CSS",
-    icon: "../src/assets/csslogo.png",
+    icon: "public/assets/csslogo.png",
     description: "Modern CSS framework",
     color: "bg-violet-800/40",
     hoverColor: "group-hover:bg-violet-700/50",
@@ -205,7 +205,7 @@ const skills = [
   {
     category: "Styling",
     tech: "Supabase",
-    icon: "../src/assets/supabaselogo.png",
+    icon: "public/assets/supabaselogo.png",
     description: "Modern CSS framework",
     color: "bg-green-800/40",
     hoverColor: "group-hover:bg-green-700/50",
@@ -214,7 +214,7 @@ const skills = [
   {
     category: "Styling",
     tech: "Github",
-    icon: "../src/assets/githublogo.png",
+    icon: "public/assets/githublogo.png",
     description: "Modern CSS framework",
     color: "bg-indigo-800/40",
     hoverColor: "group-hover:bg-indigo-700/50",
@@ -223,7 +223,7 @@ const skills = [
   {
     category: "Styling",
     tech: "VSCODE",
-    icon: "../src/assets/vscodelogo.png",
+    icon: "public/assets/vscodelogo.png",
     description: "Modern CSS framework",
     color: "bg-purple-800/40",
     hoverColor: "group-hover:bg-purple-700/50",
@@ -413,7 +413,7 @@ const SkillsSection = () => {
                   <span className="flex flex-row items-center justify-between w-full h-min">
                     <div className="md:text-4xl text-2xl font-bold">The Hill School</div>
                     <div className="w-[80px] h-[80px]">
-                      <img src="../src/assets/hilllogoportfolio2.png"></img>
+                      <img src="public/assets/hilllogoportfolio2.png"></img>
                     </div>
 
                   </span>
@@ -442,7 +442,7 @@ export const projects = [
     description: "House of the Baron is a single-player adventure game that I developed with a team for the Technology Student Association. It follows a lone adventurer as he travels through an old haunted mansion. As he progresses through the house, he faces different enemies and fights the ghosts of the previous inhabitants. This game qualified us for the National TSA Conference.",
     shortDesc: "A single-player adventure game set in a haunted mansion, developed for the Technology Student Association.",
     type: "Web Game",
-    image: "src/assets/projects/hotb.png",
+    image: "public/assets/projects/hotb.png",
     color: "bg-purple-800/50",
     hoverColor: "group-hover:bg-purple-80/50",
     glow: "hover:shadow-purple-600/20",
@@ -458,7 +458,7 @@ export const projects = [
     description: "Scrub Club is a website that I created and deployed for the company Scrub Club, to help them attract users in the greater Collegeville Area. Featuring a responsive design, user testimonials, photos of results and a custom cleaning request tool, it has succesfully attracted hundreds of users and remains essential to the business.",
     shortDesc: "A responsive business website for Scrub Club cleaning company with booking tools and testimonials.",
     type: "webapp",
-    image: "src/assets/projects/scrubclubs2.png",
+    image: "public/assets/projects/scrubclubs2.png",
     color: "bg-cyan-600/50",
     hoverColor: "group-hover:bg-cyan-700/50",
     glow: "hover:shadow-cyan-500/20",
@@ -474,9 +474,9 @@ export const projects = [
     description: "Clarity is a mobile app that gives users powerful vision-accessibility tools with the help of AI. From colorblindness contrasting to visual question answering, Clarity provides an inclusive and empowering experience for users of all abilities. Clarity also won first place in the 2024 Congressional App Challenge, giving us the opportunity to present our app to many congressmen and congresswoman at #HouseOfCode.",
     shortDesc: "Award-winning AI-powered mobile app for vision accessibility, winner of the 2024 Congressional App Challenge.",
     type: "app",
-    image: "src/assets/projects/clarity3.jpeg",
-    image2: "src/assets/projects/clarity.jpeg",
-    image3: "src/assets/projects/clarity4.jpeg",
+    image: "public/assets/projects/clarity3.jpeg",
+    image2: "public/assets/projects/clarity.jpeg",
+    image3: "public/assets/projects/clarity4.jpeg",
     color: "bg-sky-500/50",
     hoverColor: "group-hover:bg-sky-700/50",
     glow: "hover:shadow-sky-500/20",
@@ -492,9 +492,9 @@ export const projects = [
     description: "WriteRight is an iOS app that I developed individually between December 2022 and August 2023, and it allows users to scan and analyze handwritten text for grammar and spelling errors. After its release, it has accumulated over 3,500 downloads from over 50 countries, and won second place in the 2023 Congressional App Challenge.",
     shortDesc: "iOS app for scanning and analyzing handwritten text, with 3,500+ downloads across 50+ countries.",
     type: "app",
-    image: "src/assets/projects/writeright3.jpeg",
-    image2: "src/assets/projects/writeright2.jpg",
-    image3: "src/assets/projects/writeright4.jpg",
+    image: "public/assets/projects/writeright3.jpeg",
+    image2: "public/assets/projects/writeright2.jpg",
+    image3: "public/assets/projects/writeright4.jpg",
     color: "bg-red-500/50",
     hoverColor: "group-hover:bg-red-700/50",
     glow: "hover:shadow-red-500/20",
@@ -510,7 +510,7 @@ export const projects = [
     description: "PeakClips is a fullstack social media app designed for sharing and viewing video clips and images, particularly of video games. The site functions as a secure React-based web app with a cloud backend and is constantly content-moderated by an advanced AI system. I built this app with fellow Hill student Ambrose Cole, and we have accumulated hundreds of users since its creation.",
     shortDesc: "AI-moderated social media platform for sharing gaming clips and images, built with React.",
     type: "webapp",
-    image: "src/assets/projects/peakclips.png",
+    image: "public/assets/projects/peakclips.png",
     color: "bg-blue-700/50",
     hoverColor: "group-hover:bg-blue-700/50",
     glow: "hover:shadow-blue-500/20",
@@ -779,7 +779,7 @@ const ContactSection = () => {
 
   return (
     <Section>
-      <div className="w-full flex md:mt-0 mt-12 md:h-min h-screen md:flex-row flex-col">
+      <div className="w-full flex md:mt-18 mt-12 h-screen md:flex-row flex-col">
 
         <div className="md:mr-6 md:block hidden">
           <h2 className="text-3xl md:text-5xl font-bold text-gray-200/80">Contact me</h2>
