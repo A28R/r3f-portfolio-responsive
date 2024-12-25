@@ -116,7 +116,7 @@ export const ProjectCard = ({ project, isCenter, onClick, isNew }) => {
             </div>
             
             {/* Skills Used */}
-            <div className="flex md:flex-row flex-col justify-center md:space-x-2 space-y-2">
+            <div className="flex md:flex-row flex-col justify-center items-center md:space-x-2 md:space-y-0 space-y-2 space-x-0">
               {project.skillsUsed.map((skill) => (
                 <span 
                   key={skill}

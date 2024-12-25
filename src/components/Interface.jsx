@@ -784,8 +784,8 @@ const ContactSection = () => {
         <div className="md:mr-6 md:block hidden">
           <h2 className="text-3xl md:text-5xl font-bold text-gray-200/80">Contact me</h2>
             {state.succeeded ? (
-              <div className="mt-7 py-5 px-8 rounded-md bg-green-400 bg-opacity-50 w-auto">
-              <p className="text-xl font-bold text-green-300 text-center">Thanks for your message !</p>
+              <div className="mt-8 py-5 px-8 rounded-md bg-green-400 bg-opacity-50 w-auto">
+              <p className="text-xl font-bold text-green-300 text-center">Thanks for your message!</p>
                 </div>
             ) : (
               <motion.div className="mt-8 p-8 rounded-xl md:bg-indigo-900/50 bg-indigo-900 bg-opacity-50 w-96 max-w-full">
