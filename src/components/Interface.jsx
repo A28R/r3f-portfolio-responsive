@@ -122,7 +122,7 @@ const skills = [
   {
     category: "Mobile Development",
     tech: "Flutter",
-    icon: "public/assets/flutter1.png",
+    icon: "../../assets/flutter1.png",
     description: "Cross-platform app development",
     color: "bg-blue-800/40",
     hoverColor: "group-hover:bg-blue-800/50",
@@ -131,7 +131,7 @@ const skills = [
   {
     category: "Game Development",
     tech: "Godot",
-    icon: "public/assets/godot.png",
+    icon: "../../assets/godot.png",
     description: "2D/3D game creation",
     color: "bg-purple-800/40",
     hoverColor: "group-hover:bg-purple-700/50",
@@ -140,7 +140,7 @@ const skills = [
   {
     category: "Frontend Development",
     tech: "React.js",
-    icon: "public/assets/react.svg",
+    icon: "../../assets/react.svg",
     description: "Web application development",
     color: "bg-cyan-800/40",
     hoverColor: "group-hover:bg-cyan-700/50",
@@ -149,7 +149,7 @@ const skills = [
   {
     category: "Styling",
     tech: "JAVA",
-    icon: "public/assets/javalogo.png",
+    icon: "../../assets/javalogo.png",
     description: "Modern CSS framework",
     color: "bg-teal-800/40",
     hoverColor: "group-hover:bg-teal-700/50",
@@ -158,7 +158,7 @@ const skills = [
   {
     category: "Machine Learning",
     tech: "Python",
-    icon: "public/assets/python1.png",
+    icon: "../../assets/python1.png",
     description: "Backend & automation",
     color: "bg-yellow-800/40",
     hoverColor: "group-hover:bg-yellow-700/50",
@@ -167,7 +167,7 @@ const skills = [
   {
     category: "Styling",
     tech: "Tailwind",
-    icon: "public/assets/tailwind.png",
+    icon: "../../assets/tailwind.png",
     description: "Modern CSS framework",
     color: "bg-emerald-800/40",
     hoverColor: "group-hover:bg-emerald-700/50",
@@ -176,7 +176,7 @@ const skills = [
   {
     category: "Styling",
     tech: "Node.js",
-    icon: "public/assets/nodejslogo.png",
+    icon: "../../assets/nodejslogo.png",
     description: "Modern CSS framework",
     color: "bg-green-800/40",
     hoverColor: "group-hover:bg-green-700/50",
@@ -185,7 +185,7 @@ const skills = [
   {
     category: "Styling",
     tech: "HTML",
-    icon: "public/assets/htmllogo.png",
+    icon: "../../assets/htmllogo.png",
     description: "Modern CSS framework",
     color: "bg-orange-800/40",
     hoverColor: "group-hover:bg-orange-700/50",
@@ -195,7 +195,7 @@ const skills = [
   {
     category: "Styling",
     tech: "CSS",
-    icon: "public/assets/csslogo.png",
+    icon: "../../assets/csslogo.png",
     description: "Modern CSS framework",
     color: "bg-violet-800/40",
     hoverColor: "group-hover:bg-violet-700/50",
@@ -205,7 +205,7 @@ const skills = [
   {
     category: "Styling",
     tech: "Supabase",
-    icon: "public/assets/supabaselogo.png",
+    icon: "../../assets/supabaselogo.png",
     description: "Modern CSS framework",
     color: "bg-green-800/40",
     hoverColor: "group-hover:bg-green-700/50",
@@ -214,7 +214,7 @@ const skills = [
   {
     category: "Styling",
     tech: "Github",
-    icon: "public/assets/githublogo.png",
+    icon: "../../assets/githublogo.png",
     description: "Modern CSS framework",
     color: "bg-indigo-800/40",
     hoverColor: "group-hover:bg-indigo-700/50",
@@ -223,7 +223,7 @@ const skills = [
   {
     category: "Styling",
     tech: "VSCODE",
-    icon: "public/assets/vscodelogo.png",
+    icon: "../../assets/vscodelogo.png",
     description: "Modern CSS framework",
     color: "bg-purple-800/40",
     hoverColor: "group-hover:bg-purple-700/50",
