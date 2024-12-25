@@ -1,14 +1,14 @@
 import { Image, Text } from "@react-three/drei";
 import { useFrame, useThree } from "@react-three/fiber";
 import { animate, useMotionValue } from "framer-motion";
-
+import React from 'react';
 import { motion } from "framer-motion-3d";
 import { atom, useAtom } from "jotai";
 import { useEffect, useRef } from "react";
 
 export const projects = [
   {
-    title: "Wawatmos",
+    title: "wawatmos",
     url: "https://r3f-wawatmos-final.vercel.app/",
     image: "projects/wawatmos.jpg",
     description: "Recreating the Atmos Awwwards website with React Three Fiber",
@@ -61,7 +61,7 @@ const Project = (props) => {
         ref={background}
       >
         <planeGeometry args={[2.2, 2]} />
-        <meshBasicMaterial color="black" transparent opacity={0.4} />
+        <meshBasicMaterial color="#10002B" transparent opacity={0.4} />
       </mesh>
       <Image
         scale={[2, 1.2, 1]}

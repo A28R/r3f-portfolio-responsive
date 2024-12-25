@@ -14,14 +14,14 @@ export function Avatar(props) {
     cursorFollow: false,
   });
   const group = useRef();
-  const { nodes, materials } = useGLTF("models/646d9dcdc8a5f5bddbfac913.glb");
+  const { nodes, materials } = useGLTF("models/ayaanModel.glb");
 
-  const { animations: typingAnimation } = useFBX("animations/Typing.fbx");
+  const { animations: typingAnimation } = useFBX("animations/Typing4.fbx");
   const { animations: standingAnimation } = useFBX(
-    "animations/Standing Idle.fbx"
+    "animations/Standing Idle3.fbx"
   );
   const { animations: fallingAnimation } = useFBX(
-    "animations/Falling Idle.fbx"
+    "animations/Falling Idle1.fbx"
   );
 
   typingAnimation[0].name = "Typing";
@@ -33,15 +33,15 @@ export function Avatar(props) {
     group
   );
 
-  useFrame((state) => {
-    if (headFollow) {
-      group.current.getObjectByName("Head").lookAt(state.camera.position);
-    }
-    if (cursorFollow) {
-      const target = new THREE.Vector3(state.mouse.x, state.mouse.y, 1);
-      group.current.getObjectByName("Spine2").lookAt(target);
-    }
-  });
+  // useFrame((state) => {
+  //   if (headFollow) {
+  //     group.current.getObjectByName("Head").lookAt(state.camera.position);
+  //   }
+  //   if (cursorFollow) {
+  //     const target = new THREE.Vector3(state.mouse.x, state.mouse.y, 1);
+  //     group.current.getObjectByName("Spine2").lookAt(target);
+  //   }
+  // });
 
   useEffect(() => {
     actions[animation].reset().fadeIn(0.5).play();
@@ -53,6 +53,7 @@ export function Avatar(props) {
   useEffect(() => {
     Object.values(materials).forEach((material) => {
       material.wireframe = wireframe;
+
     });
   }, [wireframe]);
 
@@ -131,7 +132,7 @@ export function Avatar(props) {
   );
 }
 
-useGLTF.preload("models/646d9dcdc8a5f5bddbfac913.glb");
-useFBX.preload("animations/Typing.fbx");
-useFBX.preload("animations/Standing Idle.fbx");
-useFBX.preload("animations/Falling Idle.fbx");
+useGLTF.preload("models/ayaanModel.glb");
+useFBX.preload("animations/Typing4.fbx");
+useFBX.preload("animations/Standing Idle3.fbx");
+useFBX.preload("animations/Falling Idle1.fbx");

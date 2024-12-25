@@ -12,7 +12,8 @@ import { framerMotionConfig } from "../config";
 import { Avatar } from "./Avatar";
 import { Background } from "./Background";
 import { Office } from "./Office";
-import { Projects } from "./Projects";
+
+
 
 export const Experience = (props) => {
   const { menuOpened } = props;
@@ -69,6 +70,7 @@ export const Experience = (props) => {
         characterGroup.current.position
       );
     }
+
     // console.log([position.x, position.y, position.z]);
 
     // const quaternion = new THREE.Quaternion();
@@ -95,21 +97,23 @@ export const Experience = (props) => {
             scaleX: officeScaleRatio,
             scaleY: officeScaleRatio,
             scaleZ: officeScaleRatio,
+
           },
           1: {
-            y: -viewport.height + 0.5,
+            y: -viewport.height + 1,
             x: isMobile ? 0.3 : 0,
             z: 7,
-            rotateX: 0,
-            rotateY: isMobile ? -Math.PI / 2 : 0,
+            rotateX: 0, 
+            rotateY: isMobile ? -Math.PI / 2 :0,
             rotateZ: 0,
-            scaleX: isMobile ? 1.5 : 1,
-            scaleY: isMobile ? 1.5 : 1,
-            scaleZ: isMobile ? 1.5 : 1,
+            scaleX: isMobile ? 1 : 1.15,
+            scaleZ: isMobile ? 1 : 1.15,
+            scaleY: isMobile ? 1 : 1.15,
+            zIndex: 80,
           },
           2: {
-            x: isMobile ? -1.4 : -2,
-            y: -viewport.height * 2 + 0.5,
+            x: isMobile ? -1.4 : -2.4,
+            y: -viewport.height * 2 -4,
             z: 0,
             rotateX: 0,
             rotateY: Math.PI / 2,
@@ -117,10 +121,11 @@ export const Experience = (props) => {
             scaleX: 1,
             scaleY: 1,
             scaleZ: 1,
+            zIndex: 80,
           },
           3: {
-            y: -viewport.height * 3 + 1,
-            x: 0.24,
+            y: -viewport.height * 3 + 1.2,
+            x: 0.44,
             z: 8.5,
             rotateX: 0,
             rotateY: -Math.PI / 4,
@@ -128,10 +133,14 @@ export const Experience = (props) => {
             scaleX: 1,
             scaleY: 1,
             scaleZ: 1,
+            zIndex: 80,
           },
         }}
       >
-        <Avatar animation={characterAnimation} wireframe={section === 1} />
+        <Avatar 
+        animation={characterAnimation}
+
+        />
       </motion.group>
       <ambientLight intensity={1} />
       <motion.group
@@ -160,6 +169,7 @@ export const Experience = (props) => {
 
       {/* SKILLS */}
       <motion.group
+      
         position={[
           0,
           isMobile ? -viewport.height : -1.5 * officeScaleRatio,
@@ -175,45 +185,48 @@ export const Experience = (props) => {
               : -1.5 * officeScaleRatio,
         }}
       >
+
         <directionalLight position={[-5, 3, 5]} intensity={0.4} />
+        
         <Float>
-          <mesh position={[1, -3, -15]} scale={[2, 2, 2]}>
+          <mesh position={[1, -3, -15]} scale={[3, 3, 3]}>
             <sphereGeometry />
             <MeshDistortMaterial
               opacity={0.8}
               transparent
               distort={0.4}
               speed={4}
-              color={"red"}
+              color={"#3a5ebd"}
             />
           </mesh>
         </Float>
         <Float>
-          <mesh scale={[3, 3, 3]} position={[3, 1, -18]}>
+          <mesh scale={[4, 4, 4]} position={[3, 1, -18]}>
             <sphereGeometry />
             <MeshDistortMaterial
               opacity={0.8}
               transparent
               distort={1}
               speed={5}
-              color="yellow"
+              color="#3253aa"
             />
           </mesh>
         </Float>
         <Float>
-          <mesh scale={[1.4, 1.4, 1.4]} position={[-3, -1, -11]}>
+          <mesh scale={[2.4, 2.4, 2.4]} position={[-3, -1, -11]}>
             <boxGeometry />
             <MeshWobbleMaterial
               opacity={0.8}
               transparent
               factor={1}
               speed={5}
-              color={"blue"}
+              color={"#294794"}
             />
           </mesh>
         </Float>
+
       </motion.group>
-      <Projects />
+      {/* <Projects /> */}
     </>
   );
 };
