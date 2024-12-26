@@ -18,18 +18,26 @@ export function Avatar(props) {
 
   const { animations: typingAnimation } = useFBX("animations/Typing4.fbx");
   const { animations: standingAnimation } = useFBX(
-    "animations/Standing Idle3.fbx"
+    "animations/Arm Gesture.fbx"
   );
   const { animations: fallingAnimation } = useFBX(
     "animations/Falling Idle1.fbx"
+  );
+  const { animations: projectsAnimation } = useFBX(
+    "animations/Push Up.fbx"
+  );
+  const { animations: contactAnimation } = useFBX(
+    "animations/Hip Hop Dancing.fbx"
   );
 
   typingAnimation[0].name = "Typing";
   standingAnimation[0].name = "Standing";
   fallingAnimation[0].name = "Falling";
+  projectsAnimation[0].name = "Projects";
+  contactAnimation[0].name = "Contact";
 
   const { actions } = useAnimations(
-    [typingAnimation[0], standingAnimation[0], fallingAnimation[0]],
+    [typingAnimation[0], standingAnimation[0], fallingAnimation[0],projectsAnimation[0],contactAnimation[0]],
     group
   );
 
@@ -134,5 +142,7 @@ export function Avatar(props) {
 
 useGLTF.preload("models/ayaanModel.glb");
 useFBX.preload("animations/Typing4.fbx");
-useFBX.preload("animations/Standing Idle3.fbx");
+useFBX.preload("animations/Arm Gesture.fbx");
 useFBX.preload("animations/Falling Idle1.fbx");
+useFBX.preload("animations/Hip Hop Dancing.fbx");
+useFBX.preload("animations/Push Up.fbx");

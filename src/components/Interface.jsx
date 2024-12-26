@@ -61,8 +61,8 @@ const AboutSection = (props) => {
   return (
     <Section mobileTop >
       <div className="w-full md:h-auto h-screen">
-      <div className="md:hidden mt-4 w-2/3 px-1 py-2 flex flex-row items-center justify-start text-xs font-semibold text-yellow-100/60 bg-yellow-600/60 rounded-lg"><span><IoIosWarning size={28} className="mr-2 ml-1"/></span> Desktop experience recommended, some content may be omitted </div>
-        <motion.h1 className="text-3xl md:text-5xl md:h-auto text-gray-300 font-extrabold leading-snug mt-6 md:mt-0 ">
+      <div className="md:hidden sm:mt-4 mt-0 w-2/3 px-1 py-2 flex flex-row items-center justify-start text-xs font-semibold text-yellow-100/60 bg-yellow-600/60 rounded-lg"><span><IoIosWarning size={28} className="mr-2 ml-1"/></span> Desktop experience recommended, some content may be omitted </div>
+        <motion.h1 className="text-3xl md:text-5xl md:h-auto text-gray-300 font-extrabold leading-snug mt-2 sm:mt-6 md:mt-0 ">
           Hi, I'm
           <br />
           <motion.div className="md:my-1 text-indigo-400 md:text-7xl text-4xl font-extrabold drop-shadow-[0px_0px_38px_rgba(115,91,236,1)] ">Ayaan Rege</motion.div>
@@ -366,9 +366,9 @@ const SkillsSection = () => {
                           delay: 1+ (index * .100),
                         }}
                   key={index}
-                  className={`skill-card group relative p-4 rounded-xl bg-indigo-950
-                            border-1 border-red-200 cursor-pointer shadow-lg
-                            hover:shadow-xl hover:border-gray-500 hover:text-gray-300 overflow-hidden`}
+                  className={`skill-card group relative p-4 rounded-xl bg-indigo-900/50
+                            border-[1.5px] border-indigo-600/70 cursor-pointer shadow-lg
+                            hover:shadow-xl hover:border-transparent hover:text-gray-300 overflow-hidden`}
                   style={{ animationDelay: `${index * 150}ms` }}
                 >
                   <div className={`absolute inset-0 transition-colors duration-300 ${skill.hoverColor}`} />
@@ -409,7 +409,7 @@ const SkillsSection = () => {
                           Education
         
                         </h2>
-            <div className="mt-4 md:mt-8 space-y-2 md:space-y-4 text-gray-200/80 bg-indigo-950 p-6 rounded-2xl tracking-wider flex flex-col justify-center items-start">
+            <div className="mt-4 md:mt-8 space-y-2 md:space-y-4 text-gray-200/80 bg-indigo-900/50 border-2 border-indigo-600/70 p-6 rounded-2xl tracking-wider flex flex-col justify-center items-start">
                   <span className="flex flex-row items-center justify-between w-full h-min">
                     <div className="md:text-4xl text-2xl font-bold">The Hill School</div>
                     <div className="w-[80px] h-[80px]">
@@ -533,11 +533,11 @@ const IPhoneMockup = ({ child1, child2, child3, className = '' }) => (
     </div>
     
     {/* Side volume buttons */}
-    <div className="absolute left-[-8px] top-36 w-1 h-12 bg-gray-600 rounded-l"></div>
-    <div className="absolute left-[-8px] top-48 w-1 h-8 bg-gray-600  rounded-l"></div>
+    <div className="absolute left-[-8px] top-12 md:top-36 w-[0.5px] md:w-1 h-6 md:h-12 bg-gray-600 rounded-l"></div>
+    <div className="absolute left-[-8px] top-12 md:top-48 w-[0.5px] md:w-1 h-6 md:h-8 bg-gray-600  rounded-l"></div>
     
     {/* Power button */}
-    <div className="absolute right-[-8px] top-36 w-1 h-12 bg-gray-600  rounded-r"></div>
+    <div className="absolute right-[-8px] top-12 md:top-36 w-[0.5px] md:w-1 h-6 md:h-12 bg-gray-600  rounded-r"></div>
     
     <div className="w-full h-full bg-white rounded-[18px] md:rounded-[36px] overflow-hidden relative">
       {child1}
@@ -552,11 +552,11 @@ const IPhoneMockup = ({ child1, child2, child3, className = '' }) => (
       </div>
   
       {/* Side volume buttons */}
-      <div className="absolute left-[-8px] top-36 w-1 h-12 bg-gray-600  rounded-l"></div>
-      <div className="absolute left-[-8px] top-48 w-1 h-8 bg-gray-600  rounded-l"></div>
+      <div className="absolute left-[-8px] top-12 md:top-36 w-[0.5px] md:w-1 h-6 md:h-12 bg-gray-600  rounded-l"></div>
+      <div className="absolute left-[-8px] top-12 md:top-48 w-[0.5px] md:w-1 h-6 md:h-8 bg-gray-600  rounded-l"></div>
   
       {/* Power button */}
-      <div className="absolute right-[-8px] top-36 w-1 h-12 bg-gray-600  rounded-r"></div>
+      <div className="absolute right-[-8px] top-12 md:top-36 w-[0.5px] md:w-1 h-6 md:h-12 bg-gray-600  rounded-r"></div>
   
       <div className="w-full h-full bg-white rounded-[18px] md:rounded-[36px] overflow-hidden relative">
         {child2}
@@ -572,11 +572,11 @@ const IPhoneMockup = ({ child1, child2, child3, className = '' }) => (
     </div>
     
     {/* Side volume buttons */}
-    <div className="absolute left-[-8px] top-36 w-1 h-12 bg-gray-600  rounded-l"></div>
-    <div className="absolute left-[-8px] top-48 w-1 h-8 bg-gray-600  rounded-l"></div>
+    <div className="absolute left-[-8px] top-12 md:top-36 w-[0.5px] md:w-1 h-6 md:h-12 bg-gray-600  rounded-l"></div>
+    <div className="absolute left-[-8px] top-12 md:top-48 w-[0.5px] md:w-1 h-6 md:h-8 bg-gray-600  rounded-l"></div>
     
     {/* Power button */}
-    <div className="absolute right-[-8px] top-36 w-1 h-12 bg-gray-600  rounded-r"></div>
+    <div className="absolute right-[-8px] top-12 md:top-36 w-[0.5px] md:w-1 h-6 md:h-12 bg-gray-600  rounded-r"></div>
     
     <div className="w-full h-full bg-white rounded-[18px] md:rounded-[36px] overflow-hidden relative">
       {child3}
@@ -627,8 +627,8 @@ const ProjectsSection = () => {
   const Mockup = projects[currentProject].type === "app" ? IPhoneMockup : ComputerMockup;
 
   return (
-    <div className="w-full h-screen flex flex-col items-center justify-start relative mt-0 md:mt-2 md:p-16 p-10 gap-16">
-      <section className="w-full md:h-min h-screen flex flex-col md:flex-row items-center md:justify-start justify-evenly relative align-center mt-18 md:gap-8">
+    <div className="w-full h-screen flex flex-col items-center justify-start relative mt-0 md:mt-2 md:p-16 p-3">
+      <section className="w-full h-4/5 flex flex-col md:flex-row items-center md:justify-center sm:justify-center justify-evenly relative align-center md:gap-8">
         {/* Animated Mockup at the top */}
         <motion.div
           className="mb-0 md:mb-8 w-full flex justify-center md:justify-end items-center"
@@ -647,7 +647,7 @@ const ProjectsSection = () => {
 
           </Mockup>
         </motion.div>
-        <div className="relative flex justify-center md:justify-start items-center w-full px-8 gap-8 mt-40 mb-24">
+        <div className="relative flex justify-center md:justify-start items-center w-full px-8 gap-8 sm:mt-32 mt-30 mb-24">
         <AnimatePresence>
   {projects.map((project, index) => (
     <ProjectCard 
@@ -662,9 +662,9 @@ const ProjectsSection = () => {
         </div>
       </section>
       
-      <div className="z-30 flex  w-full items-center justify-center py-8 px-4 relative">
+      <div className="flex h-1/5  w-full items-center justify-center relative">
       <motion.div 
-        className="flex items-center space-x-8 bg-indigo-950/60 backdrop-blur-sm rounded-full p-6 shadow-2xl border-2 border-indigo-900/50"
+        className="flex items-center space-x-16 bg-indigo-950/60 backdrop-blur-sm rounded-full p-8 shadow-2xl border-2 border-indigo-900/50"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ type: "spring", stiffness: 100, damping: 10 }}
@@ -788,7 +788,7 @@ const ContactSection = () => {
               <p className="text-xl font-bold text-green-300 text-center">Thanks for your message!</p>
                 </div>
             ) : (
-              <motion.div className="mt-8 p-8 rounded-xl md:bg-indigo-900/50 bg-indigo-900 bg-opacity-50 w-96 max-w-full">
+              <motion.div className="mt-8 p-8 rounded-xl md:bg-indigo-900/50 bg-indigo-900 border border-indigo-600/70 bg-opacity-50 w-96 max-w-full">
               <form onSubmit={handleSubmit}>
                 <label for="name" className="font-bold text-gray-300 text-xl block mb-2">
                   Name
@@ -889,8 +889,8 @@ const ContactSection = () => {
                       }}
                 key={index}
                 className={`skill-card group relative p-6 rounded-xl md:bg-indigo-950/70 bg-indigo-950
-                          border-1 border-red-200 cursor-pointer shadow-lg
-                          hover:shadow-xl hover:border-gray-500 hover:text-gray-300 overflow-hidden`}
+                          border-1 border-red-200 border border-indigo-600/50 cursor-pointer shadow-lg
+                          hover:shadow-xl hover:border-transparent hover:text-gray-300 overflow-hidden`}
                 style={{ animationDelay: `${index * 150}ms` }}
               >
                 <div className={`absolute inset-0 transition-colors duration-300 ${skill.hoverColor}`} />

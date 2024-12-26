@@ -44,7 +44,7 @@ export const Experience = (props) => {
   useEffect(() => {
     setCharacterAnimation("Falling");
     setTimeout(() => {
-      setCharacterAnimation(section === 0 ? "Typing" : "Standing");
+      setCharacterAnimation(section === 0 ? "Typing" : section==3 ? "Contact":section==2 ? "Projects":"Standing");
     }, 600);
   }, [section]);
 
@@ -106,14 +106,14 @@ export const Experience = (props) => {
             rotateX: 0, 
             rotateY: isMobile ? -Math.PI / 2 :0,
             rotateZ: 0,
-            scaleX: isMobile ? 1 : 1.15,
-            scaleZ: isMobile ? 1 : 1.15,
-            scaleY: isMobile ? 1 : 1.15,
+            scaleX: isMobile ? 1 : 1,
+            scaleZ: isMobile ? 1 : 1,
+            scaleY: isMobile ? 1 : 1,
             zIndex: 80,
           },
           2: {
-            x: isMobile ? -1.4 : -2.4,
-            y: -viewport.height * 2 -4,
+            x: isMobile ? -1.4 : -2.6,
+            y: -viewport.height * 2.38,
             z: 0,
             rotateX: 0,
             rotateY: Math.PI / 2,
@@ -124,7 +124,7 @@ export const Experience = (props) => {
             zIndex: 80,
           },
           3: {
-            y: -viewport.height * 3 + 1.2,
+            y: -viewport.height * 3 + 1.3,
             x: 0.44,
             z: 8.5,
             rotateX: 0,
@@ -176,13 +176,10 @@ export const Experience = (props) => {
           -10,
         ]}
         animate={{
-          z: section === 1 ? 0 : -10,
+          z: section === 1 ? 5 : 0,
           y:
-            section === 1
-              ? -viewport.height
-              : isMobile
-              ? -viewport.height
-              : -1.5 * officeScaleRatio,
+          isMobile?-viewport.height*section:-viewport.height*1.4*section,
+            // section === 1 ? -viewport.height*1.4 : isMobile ? -viewport.height : -1.5 * officeScaleRatio,
         }}
       >
 
@@ -192,7 +189,7 @@ export const Experience = (props) => {
           <mesh position={[1, -3, -15]} scale={[3, 3, 3]}>
             <sphereGeometry />
             <MeshDistortMaterial
-              opacity={0.8}
+              opacity={isMobile?0.3:0.8}
               transparent
               distort={0.4}
               speed={4}
@@ -201,10 +198,10 @@ export const Experience = (props) => {
           </mesh>
         </Float>
         <Float>
-          <mesh scale={[4, 4, 4]} position={[3, 1, -18]}>
+          <mesh scale={[4, 4, 4]} position={[0, 1, -18]}>
             <sphereGeometry />
             <MeshDistortMaterial
-              opacity={0.8}
+              opacity={isMobile?0.3:0.8}
               transparent
               distort={1}
               speed={5}
@@ -216,7 +213,7 @@ export const Experience = (props) => {
           <mesh scale={[2.4, 2.4, 2.4]} position={[-3, -1, -11]}>
             <boxGeometry />
             <MeshWobbleMaterial
-              opacity={0.8}
+              opacity={isMobile?0.3:0.8}
               transparent
               factor={1}
               speed={5}
@@ -227,6 +224,8 @@ export const Experience = (props) => {
 
       </motion.group>
       {/* <Projects /> */}
+
+
     </>
   );
 };
