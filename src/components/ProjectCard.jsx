@@ -24,14 +24,14 @@ export const ProjectCard = ({ project, isCenter, onClick, isNew }) => {
           : 'z-10 opacity-50'
       }`}
       initial={{
-        x: 0,
-        y: isCenter ? 0 : 300,
+        y: 0,
+        x: isCenter ? 0 : -300,
         scale: isCenter ? 1 : 0.7,
         opacity: isCenter ? 1 : 0
       }}
       animate={{
-        x: 0,
-        y: isCenter ? 0 : 300,
+        y: 0,
+        x: isCenter ? 0 : -300,
         scale: isCenter ? 1 : 0.7,
         opacity: isCenter ? 1 : 0
       }}
