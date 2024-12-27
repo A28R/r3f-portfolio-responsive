@@ -628,7 +628,7 @@ const ProjectsSection = () => {
 
   return (
     <div className="w-full h-screen flex flex-col items-center justify-start relative mt-0 md:mt-2 md:p-16 p-3">
-      <section className="w-full h-4/5 flex flex-col md:flex-row items-center md:justify-center sm:justify-center justify-center relative align-center md:gap-8">
+      <section className="w-full h-max flex flex-col md:flex-row items-center md:justify-center sm:justify-center justify-center relative align-center md:gap-8">
         {/* Animated Mockup at the top */}
         <motion.div
           className="mb-0 md:mb-8 w-full flex justify-center md:justify-end items-center"
@@ -662,7 +662,7 @@ const ProjectsSection = () => {
         </div>
       </section>
       
-      <div className="flex h-1/5  w-full items-center justify-center relative">
+      <div className="flex h-min  w-full items-center justify-center relative">
       <motion.div 
         className="flex items-center space-x-16 bg-indigo-950/60 backdrop-blur-sm rounded-full p-8 shadow-2xl border-2 border-indigo-900/50"
         initial={{ opacity: 0, y: 20 }}
