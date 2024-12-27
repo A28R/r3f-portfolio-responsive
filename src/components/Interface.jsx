@@ -834,7 +834,7 @@ const ContactSection = () => {
                 />
                 <button
                   disabled={state.submitting}
-                  className="bg-indigo-800/90 text-white py-4 px-8 rounded-lg font-bold text-lg mt-16 "
+                  className="bg-indigo-800/90 border border-indigo-500 text-white py-4 px-8 rounded-lg font-bold text-lg mt-16 "
                 >
                   Submit
                 </button>
