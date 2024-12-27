@@ -628,7 +628,7 @@ const ProjectsSection = () => {
 
   return (
     <div className="w-full h-screen flex flex-col items-center justify-start relative mt-0 md:mt-2 md:p-16 p-3">
-      <section className="w-full h-4/5 flex flex-col md:flex-row items-center md:justify-center sm:justify-center justify-evenly relative align-center md:gap-8">
+      <section className="w-full h-4/5 flex flex-col md:flex-row items-center md:justify-center sm:justify-center justify-center relative align-center md:gap-8">
         {/* Animated Mockup at the top */}
         <motion.div
           className="mb-0 md:mb-8 w-full flex justify-center md:justify-end items-center"
@@ -647,7 +647,7 @@ const ProjectsSection = () => {
 
           </Mockup>
         </motion.div>
-        <div className="relative flex justify-center md:justify-start items-center w-full px-8 gap-8 sm:mt-32 md:mt-30 mb-24">
+        <div className="relative flex justify-center md:justify-start items-center w-full px-8 gap-8 sm:mt-32 md:mt-30 mt-32 mb-24">
         <AnimatePresence>
   {projects.map((project, index) => (
     <ProjectCard 
