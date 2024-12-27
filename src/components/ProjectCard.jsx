@@ -60,7 +60,7 @@ export const ProjectCard = ({ project, isCenter, onClick, isNew }) => {
           {/* Project Header */}
           <div className="flex justify-between items-center">
             <motion.h3
-              className="text-xl md:text-3xl font-bold text-gray-200 flex flex-row justify-center items-center"
+              className="text-md md:text-3xl sm:text-xl font-bold text-gray-200 flex flex-row justify-center items-center"
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2, type: "spring", stiffness: 100 }}
@@ -99,7 +99,7 @@ export const ProjectCard = ({ project, isCenter, onClick, isNew }) => {
 
           {/* Shortened Project Description (for mobile) */}
           <motion.p
-            className="text-gray-300 md:text-lg text-md md:leading-relaxed leading-tight md:hidden block"
+            className="text-gray-300 sm:text-md text-xs md:leading-relaxed leading-tight md:hidden block"
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2, type: "spring", stiffness: 100 }}

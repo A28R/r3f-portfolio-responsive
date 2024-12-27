@@ -647,7 +647,7 @@ const ProjectsSection = () => {
 
           </Mockup>
         </motion.div>
-        <div className="relative flex justify-center md:justify-start items-center w-full px-8 gap-8 sm:mt-32 mt-30 mb-24">
+        <div className="relative flex justify-center md:justify-start items-center w-full px-8 gap-8 sm:mt-32 md:mt-30 mb-24">
         <AnimatePresence>
   {projects.map((project, index) => (
     <ProjectCard 
@@ -889,7 +889,7 @@ const ContactSection = () => {
                       }}
                 key={index}
                 className={`skill-card group relative p-6 rounded-xl md:bg-indigo-950/70 bg-indigo-950
-                          border-1 border-red-200 border border-indigo-600/50 cursor-pointer shadow-lg
+                          border-1 border border-indigo-600/50 cursor-pointer shadow-lg
                           hover:shadow-xl hover:border-transparent hover:text-gray-300 overflow-hidden`}
                 style={{ animationDelay: `${index * 150}ms` }}
               >
